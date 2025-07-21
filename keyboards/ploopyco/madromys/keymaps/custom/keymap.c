@@ -17,11 +17,9 @@
  */
 #include QMK_KEYBOARD_H
 
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = LAYOUT( KC_BTN4, KC_BTN5, DRAG_SCROLL, KC_BTN3, KC_BTN1, KC_BTN2 )
-};
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {[0] = LAYOUT(KC_BTN4, KC_BTN5, DRAG_SCROLL, KC_BTN2, KC_BTN1, KC_BTN3)};
 
 const uint16_t PROGMEM boot_combo[] = {KC_BTN5, DRAG_SCROLL, COMBO_END};
-combo_t key_combos[] = {
+combo_t                key_combos[] = {
     COMBO(boot_combo, QK_BOOT),
 };
